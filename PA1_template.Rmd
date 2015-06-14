@@ -137,4 +137,5 @@ p <- qplot(interval, steps, data = data2, facets = ~ day, geom = "line",
 print(p, width = 480, height = 480)
 
 ```
+
 On average the number of steps are higher in the morning on weekdays than on weekends.

@@ -195,4 +195,5 @@ print(p, width = 480, height = 480)
 ```
 
 ![](PA1_template_files/figure-html/activity_pattern-1.png) 
+
 On average the number of steps are higher in the morning on weekdays than on weekends.
