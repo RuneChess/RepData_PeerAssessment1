@@ -128,7 +128,8 @@ I think a sensible strategy for imputing missing data is to use the mean value o
 
 
 ```r
-# I use a for loop over the 'data' data frame to replace all NA values with the mean value of the 5-minute interval, which we have already computed in the 'intervals' DF.
+# I use a for loop over the 'data' data frame to replace all NA values with the mean 
+# value of the 5-minute interval, which we have already computed in the 'intervals' DF.
 data2 <- data
 for (i in 1:nrow(data2)) {
     if (is.na(data2[i,1])) {

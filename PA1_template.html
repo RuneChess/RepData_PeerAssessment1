@@ -124,7 +124,8 @@ plot(intervals_all, type = 'l', xlab = &quot;5-minute intervals (enumerated as '
 <pre class="r"><code>na &lt;- summary(data$steps)[7]</code></pre>
 <p>There are 2304 intervals with missing step values in the data set.</p>
 <p>I think a sensible strategy for imputing missing data is to use the mean value of the 5-minute period over all days. So I will go with that approach.</p>
-<pre class="r"><code># I use a for loop over the 'data' data frame to replace all NA values with the mean value of the 5-minute interval, which we have already computed in the 'intervals' DF.
+<pre class="r"><code># I use a for loop over the 'data' data frame to replace all NA values with the mean 
+# value of the 5-minute interval, which we have already computed in the 'intervals' DF.
 data2 &lt;- data
 for (i in 1:nrow(data2)) {
     if (is.na(data2[i,1])) {
